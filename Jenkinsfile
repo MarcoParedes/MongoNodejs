@@ -1,5 +1,6 @@
 pipeline {
-    agent { label 'nodejs8' }
+    agent
+    tools {nodejs "node"}
     stages {
         stage('Restore') {
             steps {
